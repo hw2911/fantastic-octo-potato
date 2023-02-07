@@ -1,0 +1,27 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 200px;
+    background-color: #fff7f3;
+}
+
+div {
+    color: #1fc8a9;
+}
+
+h1 {
+    text-align: center;
+    color: #1fc8a9;
+}
+
+h3 {
+    text-align: center;
+    color: #1fc8a9;
+}
+
+.color {
+    color: #419988;
+}
+
+p {
+    color: #6d6d6d;
+}
