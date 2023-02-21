@@ -90,9 +90,21 @@
   
   @media (max-width: 960px) {
     .flex-container {
-      background: green;
+      background: pink;
     }
-  
+
+    h1 {
+        color: white;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    .white {
+        color: white;
+    }
+
     main {
       display: flex;
       flex-direction: column;
@@ -113,11 +125,12 @@
   
   @media (max-width: 450px) {
     .flex-container {
-      background: orange;
+      background: white;
     }
   
     main {
       display: flex;
+      background: white;
       
     }
   
