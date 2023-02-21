@@ -125,12 +125,11 @@
   
   @media (max-width: 450px) {
     .flex-container {
-      background: white;
+      background: orange;
     }
   
     main {
       display: flex;
-      background: white;
       
     }
   
