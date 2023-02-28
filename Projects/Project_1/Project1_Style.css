@@ -62,8 +62,8 @@ h4 {
 }
 
 .box {
-    background: white;
-    opacity: 0.5;
+    background: #E75152;
+    opacity: 0.75;
     padding: 10px;
     margin: 4px;
     width: 23vw;
@@ -72,7 +72,7 @@ h4 {
 
 .absolute-h {
     position: absolute;
-    transform: translate(40%, 20%);
+    transform: translate(40%, 40%);
 }
 
 .center-p {
@@ -137,10 +137,6 @@ h4 {
 .left {
     background: #efeeed;
     width: 30vw;
-}
-
-.fragment-image {
-    width: 100px;
 }
 
 .right {
