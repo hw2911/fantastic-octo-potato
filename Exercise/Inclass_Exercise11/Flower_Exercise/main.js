@@ -67,8 +67,20 @@ let cards = document.querySelectorAll(".card");
 function filterFn(event) {
     console.log(event.target)
     if(event.target.classList.contains('filter-bin')){
-        let activeBtn = filterBtns.querySelector('active')
+        let activeBtn = filterBtns.querySelector('.active')
         activeBtn.classList.remove('active')
+        event.target.classList.add('active')
+
+        const filterValue = event.target.getAttribute('data-filter')
+
+        for(let i = 0; i < cards.length; i++){
+            if(cards[i].classList.caintains(filterValue) || filterValue === 'all')
+              cards[i].classList.remove('hide')
+              cards[i].classList.add('show')
+            } else {
+            cards[i].classList.remove('show')
+            cards[i].classList.add('hide')
+            }
     }
 }
 filterBtns.addEventListener("click", filterFn);
