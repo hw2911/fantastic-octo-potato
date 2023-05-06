@@ -44,17 +44,19 @@ function renderFlowersToPage(results) {
     let listItem = document.createElement('li');
     // add a class to each item of the results
     listItem.classList.add('card', results[i].color) // red
-    // add flower name
+    // add script name
     let title = document.createElement('h3')
     title.textContent = results[i].name // Rose
     // add flower color
-    let color = document.createElement('p')
-    color.classList.add(results[i].color)
-    color.textContent = results[i].color
+    // let color = document.createElement('p')
+    // color.classList.add(results[i].color)
+    // color.textContent = results[i].color
 
-    // add flower image
+    // add script image
     let image = document.createElement('img')
     image.setAttribute('src', results[i].image)
+
+    
 
     ul.appendChild(listItem)
     listItem.appendChild(title)
@@ -82,13 +84,13 @@ function filterFn(event) {
 
     const filterValue = event.target.getAttribute('data-filter') // yellow | red
 
-    for(let i = 0; i < cards.length; i++){
-      if(cards[i].classList.contains(filterValue) || filterValue === 'all'){
-        cards[i].classList.remove('hide')
-        cards[i].classList.add('show')
+    for(let i = 0; i < scripts.length; i++){
+      if(scripts[i].classList.contains(filterValue) || filterValue === 'all'){
+        scripts[i].classList.remove('hide')
+        scripts[i].classList.add('show')
       } else {
-        cards[i].classList.remove('show')
-        cards[i].classList.add('hide')
+        scripts[i].classList.remove('show')
+        scripts[i].classList.add('hide')
       }
 
     }

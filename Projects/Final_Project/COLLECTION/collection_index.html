@@ -21,7 +21,6 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="collection_style.css">
-    <script src="collection.js"></script>
     
 </head>
 
@@ -35,7 +34,7 @@
     </div>
 </div>
 
-<div class="colorblue2">
+<div class="colorblue2 main-container">
 <div class="floating_box">
     <div class="filter_text">
         <h2><b> FILTER</b></h2>
@@ -51,39 +50,22 @@
         <button id="filter-btn" data-filter="european">EUROPEAN | 欧式</button>
         <button id="filter-btn" data-filter="chinese">CHINESE | 中式</button>
         <button id="filter-btn" data-filter="japanese">JAPANESE | 日式</button>
-
-
-        <h4> BY PLAYER</h4>
-        <button id="filter-btn" data-filter="all_p">All | 全部</button>
-        <button id="filter-btn" data-filter="6">6 PLAYERS | 6人</button>
-        <button id="filter-btn" data-filter="7">7 PLAYERS | 7人</button>
-        <button id="filter-btn" data-filter="8">8 PLAYERS | 8人</button>
-        <button id="filter-btn" data-filter="9">9 PLAYERS | 9人</button>
-        <button id="filter-btn" data-filter="9+">9+ PLAYERS | 9+人</button>
-
-
-        <h4> BY DURATION</h4>
-        <button id="filter-btn" data-filter="all_d">All | 全部</button>
-        <button id="filter-btn" data-filter="4">4hrs</button> 
-        <button id="filter-btn" data-filter="5-6">5-6 hrs</button>
-        <button id="filter-btn" data-filter="7-8">7-8 hrs</button>        
-        <button id="filter-btn" data-filter="8+">8+ hrs</button>        
-
-
     </div>
     <div class="sort_text">    
         <h2> SORT </h2>
         <div class="hl"></div>
-        <button id="filter-btn" data-filter="ascending">BY DATE (ASCENDING)</button> 
-        <button id="filter-btn" data-filter="descending">BY DATE (DESCENDING)</button> 
+        <button id="sort-btn" data-filter="ascending">BY Name (ASCENDING)</button> 
+        <button id="sort-btn" data-filter="descending">BY Name (DESCENDING)</button> 
     </div>
     
-    <div class="list">
-        <ul></ul>
-    </div>
+</div>
+
+<div class="list">
+    <ul></ul>
 </div>
 
 <div></div>
 </div>
+    <script src="collection.js"></script>
 
 </body>
