@@ -1,4 +1,4 @@
- const cards = [
+ const images = [
     '90后.jpg',
     're新世界.jpg',
     'RE新纪元.jpg',
@@ -73,8 +73,5 @@
     '风林火山.jpg',
     '飞鱼照京霜.jpg',
     '鲜衣怒马.jpg',
-    '黑河.jpg'
-]; 
-
-let randomIndex = Math.floor(Math.random()* cards.length)
-cards.src = cards[randomIndex];
+    '黑盒.jpg'
+];

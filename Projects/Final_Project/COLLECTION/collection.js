@@ -1,56 +1,33 @@
-console.log('this works')
 
-//---------- DATASET
+const script = [
+    {
+       name:"《90后才不会变老呢》",
+       theme: "joy",
+       player: "6", 
+       duration: "4",
+       Image:'images/90后.jpg',
+    },
+]
 
-const flowers = [
-  {
-    name: "Tulip",
-    color: "yellow",
-    image:
-      "https://cdn.britannica.com/37/227037-050-CA792866/Broken-tulip-flower.jpg"
-  },
-  {
-    name: "Daffodil",
-    color: "yellow",
-    image: "https://h2.commercev3.net/cdn.brecks.com/images/800/67248A.jpg"
-  },
-  {
-    name: "Sunflower",
-    color: "yellow",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/800px-Sunflower_sky_backdrop.jpg"
-  },
-  {
-    name: "Bluebell",
-    color: "blue",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a8/Hyacinthoides_non-scripta_%28Common_Bluebell%29.jpg"
-  },
-  {
-    name: "Rose",
-    color: "red",
-    image: "https://www.jacksonandperkins.com/images/xxl/v1780.jpg"
-  }
-];
 
-//---------- RENDER FLOWERS TO PAGE
+
 
 const ul = document.querySelector("ul");
 
-function renderFlowersToPage(results) {
+function renderScriptsToPage(results) {
   // iterate over data set
   for(let i = 0; i < results.length; i++){
     // create the list item
     let listItem = document.createElement('li');
     // add a class to each item of the results
-    listItem.classList.add('card', results[i].color) // red
+    listItem.classList.add('script', results[i].theme) // red
     // add flower name
     let title = document.createElement('h3')
     title.textContent = results[i].name // Rose
     // add flower color
-    let color = document.createElement('p')
-    color.classList.add(results[i].color)
-    color.textContent = results[i].color
+    let theme = document.createElement('p')
+    theme.classList.add(results[i].theme)
+    theme.textContent = results[i].theme
 
     // add flower image
     let image = document.createElement('img')
@@ -58,17 +35,16 @@ function renderFlowersToPage(results) {
 
     ul.appendChild(listItem)
     listItem.appendChild(title)
-    listItem.appendChild(color)
     listItem.appendChild(image)
 
   }
 }
-renderFlowersToPage(flowers);
+renderScriptsToPage(script);
 
 //---------- FILTER FLOWERS BY COLOR
 
-let filterBtns = document.querySelector(".filters");
-let cards = document.querySelectorAll(".card");
+let filterBtns = document.querySelector(".filter_text");
+let scripts = document.querySelectorAll(".script");
 
 function filterFn(event) {
   console.log(event.target)
